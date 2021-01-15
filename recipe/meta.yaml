@@ -1,5 +1,5 @@
 {% set name = "pyroaring" %}
-{% set version = "0.2.9" %}
+{% set version = "0.2.10" %}
 
 # pyroaring compiles against a specific release of the CRoaring source
 {% set CROARING_VERSION = "0.2.65" %}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/Ezibenroc/PyRoaringBitMap/archive/{{ version }}.tar.gz
-    sha256: cf22672356e5c9433f26db133392609216acd39ab6b724a895f36bf58c9f4151
+    sha256: 01a62e6b5bfdcae4fc63bb1a9fc2f4cc75d3cc03e326c76eb6e38b5c17110603
     patches:
       # pyroaring/setup.py normally sets some version constants from git.
       # This patch just hard-codes the versions since we're building from a tarball.
@@ -24,7 +24,7 @@ source:
     folder: CRoaring
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -53,7 +53,7 @@ about:
     - LICENSE
     - LICENSE_CRoaring
 
-  summary: 'An efficient and light-weight ordered set of 32-bit integers'
+  summary: An efficient and light-weight ordered set of 32-bit integers
   description: |
     An efficient and light-weight ordered set of 32-bit integers
     This is a Python wrapper for the C library [CRoaring][1].
