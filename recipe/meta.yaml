@@ -1,8 +1,8 @@
 {% set name = "pyroaring" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 
 # pyroaring compiles against a specific release of the CRoaring source
-{% set CROARING_VERSION = "0.2.65" %}
+{% set CROARING_VERSION = "0.2.66" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/Ezibenroc/PyRoaringBitMap/archive/{{ version }}.tar.gz
-    sha256: 01a62e6b5bfdcae4fc63bb1a9fc2f4cc75d3cc03e326c76eb6e38b5c17110603
+    sha256: 4abf8c16f4acaee6709b5b91b86d40cf1365bf460f0f4cd6caae818bec2eaf1e
     patches:
       # pyroaring/setup.py normally sets some version constants from git.
       # This patch just hard-codes the versions since we're building from a tarball.
@@ -20,7 +20,7 @@ source:
   # The git repo includes CRoaring as a submodule, but we're using a tarball,
   # so we download CRoaring as a second source.
   - url: https://github.com/RoaringBitmap/CRoaring/archive/v{{ CROARING_VERSION }}.tar.gz
-    sha256: e977cf54ee85f6d5f123dbdad87e78056e2f34c46cd39d7527724799a81571bd
+    sha256: df98bd8f6ff09097ada529a004af758ff4d33faf6a06fadf8fad9a6533afc241
     folder: CRoaring
 
 build:
