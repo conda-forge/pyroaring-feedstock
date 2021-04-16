@@ -2,7 +2,7 @@
 {% set version = "0.3.0" %}
 
 # pyroaring compiles against a specific release of the CRoaring source
-{% set CROARING_VERSION = "0.2.66" %}
+{% set CROARING_VERSION = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,7 @@ source:
   # The git repo includes CRoaring as a submodule, but we're using a tarball,
   # so we download CRoaring as a second source.
   - url: https://github.com/RoaringBitmap/CRoaring/archive/v{{ CROARING_VERSION }}.tar.gz
-    sha256: df98bd8f6ff09097ada529a004af758ff4d33faf6a06fadf8fad9a6533afc241
+    sha256: 018c87d14e931a8d4dbab045e120161d9a660f76
     folder: CRoaring
 
 build:
