@@ -20,7 +20,7 @@ source:
   # The git repo includes CRoaring as a submodule, but we're using a tarball,
   # so we download CRoaring as a second source.
   - url: https://github.com/RoaringBitmap/CRoaring/archive/v{{ CROARING_VERSION }}.tar.gz
-    sha256: 018c87d14e931a8d4dbab045e120161d9a660f76
+    sha256: ec957f2d738b3c354e76cdeb39d2bd61662bcc0dd432c1d3cd31b7e2f101a37e
     folder: CRoaring
 
 build:
