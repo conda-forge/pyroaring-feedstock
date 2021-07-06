@@ -1,5 +1,5 @@
 {% set name = "pyroaring" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 # pyroaring compiles against a specific release of the CRoaring source
 {% set CROARING_VERSION = "0.3.1" %}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/Ezibenroc/PyRoaringBitMap/archive/{{ version }}.tar.gz
-    sha256: ba17837be6bda169114666657cb8c0773e7e55faac6219d8d125584cb0089440
+    sha256: f9fa284bbe45bc71a727701734c6d448a7c25697ace998ed5a909fb6f1c27fa9
     patches:
       # pyroaring/setup.py normally sets some version constants from git.
       # This patch just hard-codes the versions since we're building from a tarball.
