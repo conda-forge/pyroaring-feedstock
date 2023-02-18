@@ -1,5 +1,5 @@
 {% set name = "pyroaring" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/Ezibenroc/PyRoaringBitMap/archive/{{ version }}.tar.gz
-    sha256: bb3d2f55a9a3ceae6bb67c19a6baf164a01d7c1b72ffd25e263586c443360b7e
+    sha256: 005dc61335af9c2190feed444779de85dbe0c69653d4fc44fc0f498ae0672c71
 
 build:
   number: 0
