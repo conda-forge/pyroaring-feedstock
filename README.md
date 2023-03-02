@@ -1,11 +1,11 @@
-About pyroaring
-===============
+About pyroaring-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyroaring-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Ezibenroc/PyRoaringBitMap
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyroaring-feedstock/blob/main/LICENSE.txt)
 
 Summary: An efficient and light-weight ordered set of 32-bit integers
 
