@@ -1,5 +1,5 @@
 {% set name = "pyroaring" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   - url: https://github.com/Ezibenroc/PyRoaringBitMap/archive/{{ version }}.tar.gz
-    sha256: ab1787177e07f6f524e05925b17ce48f242eb26477fbdbe4b5a8aaa5c68209d2
+    sha256: bce389aedbb0bfa6080e4d79828fa9f8aebc43846665d8f0d3bfe1507fb00ddc
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
