@@ -10,16 +10,18 @@ source:
     sha256: bce389aedbb0bfa6080e4d79828fa9f8aebc43846665d8f0d3bfe1507fb00ddc
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
     - pip
+    - setuptools
     - cython
   run:
     - python
