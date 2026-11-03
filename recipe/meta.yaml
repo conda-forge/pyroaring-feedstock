@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/Ezibenroc/PyRoaringBitMap/archive/{{ version }}.tar.gz
-    sha256: e5bce6e4eb43f8d52e284b616ba2121034f6064cd3a961bd69519b2f24208da3
+    sha256: b60299a29ec72c1f869c2dd147800e78711f3e18d22e85f47ef3e6d94a74e07e
 
 build:
   number: 0
